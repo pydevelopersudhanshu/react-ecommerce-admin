@@ -1,0 +1,49 @@
+
+enum OrderStatus {
+    PLACED = "PLACED",
+    PAID = "PAID",
+    SHIPPED = "SHIPPED",
+    CONFIRMED = "CONFIRMED",
+    CANCELLED = "CANCELLED",
+    DELIVERED = "DELIVERED",
+    DISPUTE = "DISPUTE",
+    RETURNED = "RETURNED",
+    REFUND_IN_PROGESS = "REFUND_IN_PROGESS",
+    REFUNDED = "REFUNDED",
+    PENDING_CANCELLATION = "PENDING_CANCELLATION"
+}
+enum Roles {
+    DASHBOARD = "DASHBOARD",
+    USERS = "USERS",
+    SELLER = "SELLER",
+    PRODUCTS = "PRODUCTS",
+    ORDER = "ORDERS",
+    COUPONS = "COUPONS",
+    HOME_MANAGEMENT = "HOME_MANAGEMENT",
+    CATEGORY = "CATEGORY",
+    BRAND = "BRAND",
+    FAQ = "FAQ",
+    CONTENT = "CONTENT",
+    REATING = "REATING",
+    CONTACT = "CONTACT",
+    NOTIFICATION = "NOTIFICATION",
+    DB_BACKUP = "DB_BACKUP",
+    SETTING = "SETTING",
+    STAFF_MEMBER = "STAFF_MEMBER",
+    LANGUAGE = "LANGUAGE",
+}
+enum Invoice {
+    SELLER = 'SELLER',
+    USER = 'USER',
+}
+enum Language {
+    ENGLISH = "ENGLISH",
+    ARABIC = "ARABIC"
+}
+
+export default {
+    OrderStatus,
+    Roles,
+    Invoice,
+    Language
+}

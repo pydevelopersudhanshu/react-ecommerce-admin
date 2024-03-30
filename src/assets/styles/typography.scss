@@ -1,0 +1,47 @@
+// ********************Imported SASS********************
+@import '../styles/theme.scss';
+
+// ********************Typography CSS********************
+
+h2 {
+    font-weight: lighter;
+    font-size: 24px;
+
+    @media all and (max-width:767px) {
+        font-size: 20px;
+    }
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: $text-color;
+}
+
+h4 {
+    font-size: 20px;
+
+    @media all and (max-width:767px) {
+        font-size: 18px;
+    }
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: $text-color;
+
+    @media all and (min-width:768px) and (max-width:991px) {
+        font-size: 14px;
+    }
+
+    @media all and (max-width:767px) {
+        font-size: 14px;
+    }
+}
+
+p {
+    margin: 0;
+}

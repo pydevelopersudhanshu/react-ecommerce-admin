@@ -1,0 +1,274 @@
+// ********************Imported SASS********************
+@import '../styles/theme.scss';
+
+// ********************Auth Pages SASS********************
+.auth-pages {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 30px;
+}
+
+.auth-page-card {
+    border: $border;
+    border-radius: $border-radius;
+    background-color: $white;
+    padding: 30px 30px;
+    box-shadow: $shadow;
+}
+
+// ******************** Group Buttons ********************
+
+.group-btn-span {
+    border-radius: 0 $border-radius $border-radius 0 !important;
+    background-color: $white !important;
+    border: $border !important;
+    border-left: 0 !important;
+    height: 100% !important;
+
+}
+
+// ********************Input Field SASS********************
+
+.form-fields-box {
+
+    input,
+    textarea {
+        background-color: $white;
+        border: $border;
+        border-radius: $border-radius !important;
+        color: inherit;
+        display: block;
+        padding: 6px 12px;
+        width: 100%;
+        font-size: $font-size;
+        box-shadow: none !important;
+        caret-color: $theme-color;
+
+        &:focus {
+            border: 1px solid $border-color;
+        }
+
+    }
+}
+
+.otp-verification-inputs {
+    input {
+        height: 46px !important;
+        width: 46px !important;
+        text-align: center;
+    }
+}
+
+.react-tel-input .flag-dropdown{
+    border: $border !important;
+}
+.react-tel-input .selected-flag{
+    background-color: $white !important;
+}
+
+.react-tel-input .form-control {
+    background-color: $white !important;
+    border: $border !important;
+    border-radius: $border-radius !important;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    width: 100% !important;
+    font-size: $font-size;
+    box-shadow: none !important;
+    caret-color: $theme-color;
+
+    &:focus {
+        border: 1px solid $border-color;
+    }
+
+}
+
+// ******************** Checkbx CSS ********************
+.form-checkbox-box {
+    input[type=checkbox] {
+        &:checked {
+            background-color: $theme-color ;
+            border: 1px solid $theme-color;
+        }
+
+        &:focus {
+            border: 1px solid $theme-color;
+        }
+    }
+
+}
+
+.form-check-input:checked {
+    background-color: $theme-color !important;
+    border-color: $theme-color !important;
+
+}
+
+
+// ******************** Question SVG ********************
+.svg-question {
+    position: absolute;
+    top: 7px;
+    display: inline-block;
+    bottom: 0;
+    right: 6px;
+    margin: auto 0;
+}
+
+
+// ********************Select Box SASS********************
+.form-select-box {
+    select {
+        background-color: $white;
+        border: $border;
+        border-radius: $border-radius;
+        color: inherit;
+        padding: 6px 30px 6px 10px;
+        font-size: $font-size;
+        box-shadow: none !important;
+        text-align: left;
+
+        &:focus {
+            border: $border !important;
+        }
+
+    }
+}
+
+// ********************Radio Button SASS********************
+
+.form-radio-box input[type=checkbox] {
+    cursor: pointer;
+
+}
+
+// ********************Links SASS********************
+
+.auth-form-links a,
+.auth-form-links button {
+    color: $theme-color;
+    text-decoration: none;
+    font-weight: normal;
+
+    &:hover {
+        text-decoration: underline;
+        color: $theme-color;
+    }
+}
+
+// ********************Profile Image SASS********************
+
+
+.profile-edit-image {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    margin: auto;
+
+    &:hover {
+        transition: all 1s ease-in-out;
+
+        &:before {
+            position: absolute;
+            font-family: "FontAwesome";
+            content: '\f030';
+            inset: 0 0 0 0;
+            background-color: rgba($color: #000000, $alpha: 0.7);
+            border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+            display: grid;
+            place-content: center;
+            color: $white;
+
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        border: 2px solid $border-color;
+    }
+}
+
+.profile-edit-upload {
+    position: absolute;
+    inset: 0 0 0 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+
+    input {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+}
+
+
+
+// ********************Banner Image SASS********************
+
+
+.banner-edit-image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    margin: auto;
+
+    &:hover {
+        transition: all 1s ease-in-out;
+
+        &:before {
+            position: absolute;
+            font-family: "FontAwesome";
+            content: '\f030';
+            inset: 0 0 0 0;
+            background-color: rgba($color: #000000, $alpha: 0.7);
+            transition: all 0.5s ease-in-out;
+            display: grid;
+            place-content: center;
+            color: $white;
+
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}
+
+.banner-edit-upload {
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+
+    input {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+}
+
+// ********************Text Editor SASS********************
+.ql-editor {
+    min-height: 180px !important;
+}
